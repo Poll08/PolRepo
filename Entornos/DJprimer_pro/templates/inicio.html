@@ -1,1 +1,19 @@
-<h1>HOLA A TODOS</h1>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>Hola a {{usuario.nombre}}!</h1>
+
+
+	<ul>
+		{% for p in producto %}
+			<li>{{p.nombre}} - ${{p.precio}}</li>
+		{% endfor %}
+
+	</ul>
+</body>
+</html>
